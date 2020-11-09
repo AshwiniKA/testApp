@@ -29,6 +29,10 @@ if (process.env.NODE_ENV === 'development') {
   app.use(logger('dev'));
 }
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(logger('start'));
+}
+
 
 app.use('/api', restRouter);
 app.use((req, res, next) => {
