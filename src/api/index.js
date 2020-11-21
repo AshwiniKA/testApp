@@ -1,10 +1,10 @@
   
 import express from 'express';
 import { songRouter } from './resources/song';
-import { bidRouter } from './resources/bid';
+import { projectRouter } from './resources/project';
 
 export const restRouter = express.Router();
 restRouter.use('/songs', songRouter);
 
 //export const restRouter1 = express.Router();
-restRouter.use('/bids', bidRouter);
+restRouter.use('/projects', projectRouter);
