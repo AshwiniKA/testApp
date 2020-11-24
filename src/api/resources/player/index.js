@@ -1,0 +1,1 @@
+export { playerRouter } from './player.router';

@@ -1,0 +1,1 @@
+export { buyerRouter } from './buyer.router';
